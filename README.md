@@ -2,7 +2,7 @@
 
 Author: Deepak Shanmugam
 
-Dataset Description:
+#Dataset Description:
 
 The dataset comprises of three csv files, namely user.csv, business.csv and review.csv.  
 
@@ -26,7 +26,7 @@ user.csv file contains the following columns "user_id"::"name"::"url"
 'url': url of the user on yelp
 
 
-Problem Description:
+#Problem Description:
 
 Problem 1: Lists the unique categories of business located in “Palo Alto”.
 
@@ -39,7 +39,7 @@ Problem 4: Lists the 'user id' and 'rating' of users that reviewed businesses lo
 This problem is addressed using In Memory join technique using Distributed Cache.
 
 
-How to execute:
+#How to execute:
 
 ------Problem 1------
 hadoop jar problem1.jar yelp.UniqueBusiness <input filepath(business.csv)> <output filepath(output1)>
