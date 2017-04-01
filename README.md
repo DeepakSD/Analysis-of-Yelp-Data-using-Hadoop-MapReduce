@@ -1,4 +1,4 @@
-# Analysis-of-Yelp-Data-using-Hadoop-MapReduce
+# Analysis-of-Yelp-Data-using-Hadoop-MapReduce-and-Spark
 
 Author: Deepak Shanmugam
 
