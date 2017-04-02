@@ -25,7 +25,7 @@ user.csv file contains the following columns "user_id"::"name"::"url"
 'name': (first name, last initial, like 'Matt J.'), this column has been made anonymous to preserve privacy 
 'url': url of the user on yelp
 
-##MapReduce
+## MapReduce
 #Problem Description:
 
 Problem 1: Lists the unique categories of business located in “Palo Alto”.
@@ -53,7 +53,8 @@ hadoop jar problem3.jar yelp.Reducejoin <input filepath1(business.csv)> <input f
 ------Problem 4------
 hadoop jar problem4.jar yelp.MapJoin <distributed cache filepath(business.csv)> <input filepath(review.csv)> <output filepath(output4)>
 
-##Spark
+## Spark
+
 #Problem Description:
 
 Problem 1: Lists the 'user id' and 'rating' of users that reviewed businesses located in Stanford.
