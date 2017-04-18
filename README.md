@@ -26,7 +26,7 @@ user.csv file contains the following columns "user_id"::"name"::"url"
 'url': url of the user on yelp
 
 # MapReduce
-# Problem Description:
+## Problem Description:
 
 Problem 1: Lists the unique categories of business located in “Palo Alto”.
 
@@ -39,7 +39,7 @@ Problem 4: Lists the 'user id' and 'rating' of users that reviewed businesses lo
 This problem is addressed using In Memory join technique using Distributed Cache.
 
 
-# How to execute:
+## How to execute:
 
 ------Problem 1------
 
@@ -57,9 +57,9 @@ This problem is addressed using In Memory join technique using Distributed Cache
     
     hadoop jar problem4.jar yelp.MapJoin <distributed cache filepath(business.csv)> <input filepath(review.csv)> <output filepath(output4)>
 
-## Spark
+# Spark
 
-# Problem Description:
+## Problem Description:
 
 Problem 1: Lists the 'user id' and 'rating' of users that reviewed businesses located in Stanford.
 
@@ -67,7 +67,7 @@ Problem 2: Lists the  business_id , full address and categories of the Top 10 bu
 
 Problem 3: Calculates the sum of weights of all incoming edges for each node in the directed graph.
 
-# How to execute:
+## How to execute:
 
 ------Problem 1------
 
