@@ -2,7 +2,7 @@
 
 Author: Deepak Shanmugam
 
-#Dataset Description:
+# Dataset Description:
 
 The dataset comprises of three csv files, namely user.csv, business.csv and review.csv.  
 
@@ -26,7 +26,7 @@ user.csv file contains the following columns "user_id"::"name"::"url"
 'url': url of the user on yelp
 
 ## MapReduce
-#Problem Description:
+# Problem Description:
 
 Problem 1: Lists the unique categories of business located in “Palo Alto”.
 
@@ -39,23 +39,27 @@ Problem 4: Lists the 'user id' and 'rating' of users that reviewed businesses lo
 This problem is addressed using In Memory join technique using Distributed Cache.
 
 
-#How to execute:
+# How to execute:
 
 ------Problem 1------
-hadoop jar problem1.jar yelp.UniqueBusiness <input filepath(business.csv)> <output filepath(output1)>
+
+    hadoop jar problem1.jar yelp.UniqueBusiness <input filepath(business.csv)> <output filepath(output1)>
 
 ------Problem 2------
-hadoop jar problem2.jar yelp.AverageRating <input filepath(review.csv)> <output filepath(output2)>
+    
+    hadoop jar problem2.jar yelp.AverageRating <input filepath(review.csv)> <output filepath(output2)>
 
 ------Problem 3------
-hadoop jar problem3.jar yelp.Reducejoin <input filepath1(business.csv)> <input filepath2(review.csv)> <output filepath(output3)>
+    
+    hadoop jar problem3.jar yelp.Reducejoin <input filepath1(business.csv)> <input filepath2(review.csv)> <output filepath(output3)>
 
 ------Problem 4------
-hadoop jar problem4.jar yelp.MapJoin <distributed cache filepath(business.csv)> <input filepath(review.csv)> <output filepath(output4)>
+    
+    hadoop jar problem4.jar yelp.MapJoin <distributed cache filepath(business.csv)> <input filepath(review.csv)> <output filepath(output4)>
 
 ## Spark
 
-#Problem Description:
+# Problem Description:
 
 Problem 1: Lists the 'user id' and 'rating' of users that reviewed businesses located in Stanford.
 
@@ -63,13 +67,16 @@ Problem 2: Lists the  business_id , full address and categories of the Top 10 bu
 
 Problem 3: Calculates the sum of weights of all incoming edges for each node in the directed graph.
 
-#How to execute:
+# How to execute:
 
 ------Problem 1------
-spark-submit --class org.spark.sparkshell1.problem1 q1.jar
+
+    spark-submit --class org.spark.sparkshell1.problem1 q1.jar
 
 ------Problem 2------
-spark-submit --class org.spark.sparkshell1.problem2 q2.jar
+
+    spark-submit --class org.spark.sparkshell1.problem2 q2.jar
 
 ------Problem 3------
-spark-submit --class org.spark.sparkshell1.problem3 q3.jar
+
+    spark-submit --class org.spark.sparkshell1.problem3 q3.jar
