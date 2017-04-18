@@ -25,7 +25,7 @@ user.csv file contains the following columns "user_id"::"name"::"url"
 'name': (first name, last initial, like 'Matt J.'), this column has been made anonymous to preserve privacy 
 'url': url of the user on yelp
 
-## MapReduce
+# MapReduce
 # Problem Description:
 
 Problem 1: Lists the unique categories of business located in “Palo Alto”.
